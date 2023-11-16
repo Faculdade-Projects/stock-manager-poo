@@ -1,0 +1,62 @@
+<mxfile host="65bd71144e">
+    <diagram id="uUiJz2oyCq9kAM-fcgm1" name="Página-1">
+        <mxGraphModel dx="1044" dy="634" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="Ensino Hibrído" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;" parent="1" vertex="1">
+                    <mxGeometry x="55" y="38" width="167" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="3" value="" style="edgeStyle=none;orthogonalLoop=1;jettySize=auto;html=1;fontFamily=Comic Sans MS;fontSize=22;endArrow=none;endFill=0;" parent="1" edge="1">
+                    <mxGeometry width="80" relative="1" as="geometry">
+                        <mxPoint x="93.0044384765625" y="81.00260925292969" as="sourcePoint"/>
+                        <mxPoint x="173.00443847656248" y="81.00260925292969" as="targetPoint"/>
+                        <Array as="points"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="Consiste na união de ensino presencial e a distância" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSize=14;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="1" vertex="1">
+                    <mxGeometry x="224" y="41" width="439" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Os aluno podem utilizar da internet para complementar conteúdos da sala de aula Assim sendo mais ativos" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSize=14;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" parent="1" vertex="1">
+                    <mxGeometry x="74" y="109" width="439" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Aprendizado entre Pares" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="63" y="209" width="268" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Eric Mazur" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+                    <mxGeometry x="72" y="239" width="82" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="8" value="Os alunos inteagem entre si, tirando dúvida e aprimorando um ao outro. O professor dever orientar e guiiar os professores. Requer conhecimento prévio!" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSize=14;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+                    <mxGeometry x="74" y="281" width="439" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="9" value="Sala de aula Invertiva" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="44" y="377" width="268" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Jonathan e Bergmann" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+                    <mxGeometry x="63" y="410" width="140" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="12" value="Os aluno tem acesso prévio ao contéudo e estudam o mesmo. Resolvem questões e com dúvidas, devera levar a sala de aula.&amp;nbsp;&lt;br&gt;&lt;br&gt;O Professor deve foca nas dúvidas dos alunos na sala de aula.&amp;nbsp;&lt;br&gt;&lt;br&gt;Nessa metodologia ativa, o objetivo é o aluno ser protagonista em rumo ao conhecimento." style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSize=14;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;" vertex="1" parent="1">
+                    <mxGeometry x="68" y="488" width="439" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="Gamificação" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="36" y="604" width="194" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="15" value="Trazer a experiência dos Jogos para o ensino&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Trazer o jogos para a sala de aula. fazendo a tecnologia aliada do ensino-aprendizado&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;br style=&quot;font-size: 14px;&quot;&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;Desenvolver a competitividade saudavel&lt;/div&gt;" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="72" y="648" width="745" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="16" value="Seminários e Discussões" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="63" y="781" width="277.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="17" value="Mudar o formato da sala faz o sentirem importantes.&lt;br&gt;&lt;br&gt;Foco no aluno. . .Os alunos aprendem melhor" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="74" y="829" width="745" height="105" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="Baseado em Problemas" style="text;strokeColor=none;align=center;fillColor=none;html=1;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=22;" vertex="1" parent="1">
+                    <mxGeometry x="61" y="926" width="277.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="19" value="Origem na medicina. em 1969.&amp;nbsp;&lt;br&gt;&lt;br&gt;Problemas complexo, na busca por soluções leva a transdisciplinaridade!" style="text;strokeColor=none;align=left;fillColor=none;html=1;verticalAlign=top;whiteSpace=wrap;rounded=0;fontFamily=Architects Daughter;fontSource=https%3A%2F%2Ffonts.googleapis.com%2Fcss%3Ffamily%3DArchitects%2BDaughter;fontSize=14;" vertex="1" parent="1">
+                    <mxGeometry x="71" y="976" width="745" height="105" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
