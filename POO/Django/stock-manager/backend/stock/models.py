@@ -8,6 +8,7 @@ class Category(models.Model):
         return self.name
     
 class Product(models.Model):
+    id = models.IntegerField(null=False, blank=False, primary_key=True)
     name = models.CharField(max_length=100, null=False, blank=False)
     description = models.TextField()
     price = models.DecimalField(max_digits=10 ,decimal_places=2, null=False, blank=False)

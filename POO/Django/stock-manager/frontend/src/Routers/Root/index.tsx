@@ -13,6 +13,7 @@ export default function Root() {
   useEffect(() => {}, [stockState]);
   return (
     <div>
+      <div className="gradient"></div>
       {/* Header, NavBar, DashBoard, Footer */}
       <Header />
       <Outlet />

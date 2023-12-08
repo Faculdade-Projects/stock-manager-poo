@@ -1,8 +1,8 @@
-a.active {
+a.link.active {
   color: var(--primary-color);
 }
 
-a:hover:after {
+a.link:hover:after {
   content: "";
   display: block;
   width: auto;
@@ -10,7 +10,7 @@ a:hover:after {
   background-color: var(--primary-color);
 }
 
-a:hover {
+a.link:hover {
   color: var(--primary-color);
   font-size-adjust: 0.54;
   transform: scale(0.8, 1);
