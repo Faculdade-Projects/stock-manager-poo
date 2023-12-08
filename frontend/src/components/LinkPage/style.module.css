@@ -1,0 +1,28 @@
+/* Estilos para botões de ação */
+.btn {
+  display: inline-block;
+  padding: 8px 12px;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.btnEdit {
+  background-color: var(--secundary-color);
+}
+
+.btnDelete {
+  background-color: rgb(212, 43, 43);
+}
+.btn:hover {
+  background-color: #15245a;
+}
+
+.btnEdit:hover {
+  background-color: #2c7b44;
+}
+
+.btnDelete:hover {
+  background-color: rgb(143, 32, 32);
+}
