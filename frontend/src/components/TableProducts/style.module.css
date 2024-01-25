@@ -1,0 +1,66 @@
+/* Estilos para a tabela */
+.tableBody {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Estilos para a tabela e suas células */
+table {
+  width: 82vw;
+  border-collapse: collapse;
+
+  box-shadow: var(--box-shadow-primary);
+}
+
+th,
+td {
+  padding: 12px 15px;
+  text-align: left;
+}
+
+thead {
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  /* color: #718096; */
+}
+
+th {
+  border-bottom: 2px solid #4c4c4d;
+}
+
+/* Estilos para linhas alternadas e hover */
+tbody tr:nth-child(even) {
+  background-color: #201e1e;
+}
+
+tbody tr:hover {
+  background-color: #787a7c40;
+}
+
+th.thHidden {
+  color: transparent;
+}
+
+.status {
+  padding: 0.3rem;
+  border-radius: 5px;
+}
+.outOfStock {
+  background-color: #bb2525;
+}
+
+.inStock {
+  background-color: var(--secundary-color);
+}
+
+.lowStock {
+  background-color: rgb(195, 108, 9);
+}
+
+.grupAction {
+  display: flex;
+  gap: 0.7rem;
+}

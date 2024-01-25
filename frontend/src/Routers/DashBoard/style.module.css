@@ -1,0 +1,42 @@
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 300px;
+  height: 170px;
+  background-color: var(--black-700);
+  padding: 0.8rem;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  max-width: 100px;
+  position: absolute;
+
+  top: 25%;
+  left: 1.5rem;
+}
+
+.card span {
+  font-size: 6.4rem;
+  position: absolute;
+  top: 0;
+  right: 2rem;
+}
+
+/* Table */
+
+.table {
+  width: auto;
+  margin-top: 2rem;
+  padding: 1rem 1.5rem;
+  background-color: var(--black-700);
+}
+
+.tableHeader h2 {
+  font-size: 1.8rem;
+  margin: 0.5rem 0 1.3rem 1rem;
+}
