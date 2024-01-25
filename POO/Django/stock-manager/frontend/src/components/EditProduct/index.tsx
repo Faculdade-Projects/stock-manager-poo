@@ -1,12 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import { useStock } from "../../context/StockContext";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 import style from "./style.module.css";
 
 export default function EditProduct({ id }: { id: string }) {
-  const { stockState, updateProduct } = useStock();
+  const { stockState, updateProduct, fetchCategory } = useStock();
   const navigate = useNavigate();
+  const [selectedCategory, setSelectedCategory] = useState("");
 
   const product = stockState.products.find((prod) => prod.id === parseInt(id));
 
@@ -35,6 +36,25 @@ export default function EditProduct({ id }: { id: string }) {
       navigate(-1);
     }
   }
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const categories = await fetchCategory();
+
+        // setCategorys(categories); // Atualiza o estado 'categorys' com as categorias obtidas
+        return categories;
+      } catch (error) {
+        console.error("Erro ao buscar categorias:", error);
+      }
+    };
+
+    fetchCategories();
+  }, [fetchCategory]);
+
+  const handleSelectChange = (event) => {
+    // Atualiza o estado da categoria selecionada
+    setSelectedCategory(event.target.value);
+  };
 
   return (
     <div className={style.wrapper}>
@@ -74,15 +94,18 @@ export default function EditProduct({ id }: { id: string }) {
           </label>
           <label>
             Categoria:
-            <input
-              type="number"
-              name="category"
-              value={formData.category}
-              onChange={(e) => {
-                setFormData({ ...formData, category: +e.target.value });
-              }}
-              required
-            />
+            <select
+              id="categorias"
+              value={selectedCategory}
+              onChange={handleSelectChange}
+            >
+              <option value="">Selecione...</option>
+              {stockState.categorys.map((categoria, index) => (
+                <option key={index} value={index}>
+                  {categoria.name}
+                </option>
+              ))}
+            </select>
           </label>
         </div>
         <div className={style.largeInput}>

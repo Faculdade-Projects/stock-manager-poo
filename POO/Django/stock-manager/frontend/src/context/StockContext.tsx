@@ -16,12 +16,18 @@ export interface IProduct {
   category: number | undefined;
 }
 
+export interface ICategory {
+  name: string;
+  id: number;
+}
 interface StockState {
   products: IProduct[];
+  categorys: ICategory[];
 }
 
 const INITIAL_STATE: StockState = {
   products: [],
+  categorys: [],
 };
 // Reducer
 
@@ -30,6 +36,7 @@ enum StockContextActions {
   createProduct = "CREATE_PRODUCT",
   deleteProduct = "DELETE_PRODUCT",
   updateProduct = "UPDATE_PRODUCT",
+  fetchCategory = "FETCH_CATEGORY",
 }
 
 interface IStockAction {
@@ -59,6 +66,8 @@ const StockReducer = (
         product.id === updatedProduct.id ? updatedProduct : product
       );
       return { ...state, products: updatedProductsList };
+    case StockContextActions.fetchCategory:
+      return { ...state, categorys: action.payload };
     default:
       throw new Error("Ação Invalida");
   }
@@ -72,6 +81,7 @@ type StockContextType = {
   createProduct: (newProduct: IProduct) => void;
   deleteProduct: (id: number) => void;
   updateProduct: (updateProduct: IProduct) => void;
+  fetchCategory: () => void;
   checkStockStatus: (quantity: number) => string;
   getStatusColor: (status: string, style: CSSModuleClasses) => string;
 };
@@ -100,6 +110,22 @@ export const StockProvider = ({ children }: { children: ReactNode }) => {
     }
   }
 
+  async function fetchCategory() {
+    try {
+      const response = await fetch("http://127.0.0.1:8000/api/category/");
+
+      if (!response.ok) {
+        throw new Error("Falha ao buscar os categorias");
+      }
+      const result = await response.json();
+      stockDispatch({
+        type: StockContextActions.fetchCategory,
+        payload: result,
+      });
+    } catch (error) {
+      console.error("Falha na busca de categorias: ", error);
+    }
+  }
   function getCSRFCookieValue() {
     const cookieParts = document.cookie.split(";");
     for (let cookie of cookieParts) {
@@ -224,6 +250,7 @@ export const StockProvider = ({ children }: { children: ReactNode }) => {
     stockState,
     stockDispatch,
     fetchProducts,
+    fetchCategory,
     checkStockStatus,
     getStatusColor,
     createProduct,

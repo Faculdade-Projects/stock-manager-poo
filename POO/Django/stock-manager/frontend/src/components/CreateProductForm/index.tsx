@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import style from "./style.module.css";
 import { IProduct, useStock } from "../../context/StockContext";
 
@@ -13,7 +13,10 @@ export default function CreateProductForm() {
   };
 
   const [formData, setFormData] = useState(inital_state);
-  const { createProduct } = useStock();
+  const [selectedCategory, setSelectedCategory] = useState("");
+
+  // const [categorys, setCategorys] = useState({});
+  const { stockState, createProduct, fetchCategory } = useStock();
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -27,8 +30,27 @@ export default function CreateProductForm() {
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const id = Math.floor(Math.random() * 1000000);
-    console.log({ ...formData, id: id });
-    createProduct({ ...formData, id: id });
+    console.log({ ...formData, id: id, category: +selectedCategory });
+    createProduct({ ...formData, id: id, category: +selectedCategory });
+  };
+
+  useEffect(() => {
+    const fetchCategories = async () => {
+      try {
+        const categories = await fetchCategory();
+
+        // setCategorys({}); // Atualiza o estado 'categorys' com as categorias obtidas
+        return categories;
+      } catch (error) {
+        console.error("Erro ao buscar categorias:", error);
+      }
+    };
+
+    fetchCategories();
+  }, [fetchCategory]);
+  const handleSelectChange = (event) => {
+    // Atualiza o estado da categoria selecionada
+    setSelectedCategory(event.target.value);
   };
 
   return (
@@ -69,15 +91,18 @@ export default function CreateProductForm() {
           </label>
           <label>
             Categoria:
-            <input
-              type="number"
-              name="category"
-              value={formData.category}
-              onChange={(e) => {
-                setFormData({ ...formData, category: +e.target.value });
-              }}
-              required
-            />
+            <select
+              id="categorias"
+              value={selectedCategory}
+              onChange={handleSelectChange}
+            >
+              <option value="">Selecione...</option>
+              {stockState.categorys.map((categoria, index) => (
+                <option key={index} value={categoria.id}>
+                  {categoria.name}
+                </option>
+              ))}
+            </select>
           </label>
         </div>
         <div className={style.largeInput}>

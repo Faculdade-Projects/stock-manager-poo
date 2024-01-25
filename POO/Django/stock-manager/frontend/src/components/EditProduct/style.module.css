@@ -21,7 +21,8 @@ label {
 }
 
 input[type="text"],
-input[type="number"] {
+input[type="number"],
+select {
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
@@ -32,8 +33,12 @@ input[type="number"] {
   margin-top: 0.3rem;
 }
 
+select {
+  width: 215px;
+}
 input[type="text"]:focus,
-input[type="number"]:focus {
+input[type="number"]:focus,
+select {
   border-color: #333;
 }
 
